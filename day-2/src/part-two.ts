@@ -90,3 +90,4 @@ function parseCube(cubeRaw: string[]): Cube {
 function calculateCubePower(cubesRequired: MinimumCubeParameters): number {
   return cubesRequired.green.amount * cubesRequired.blue.amount * cubesRequired.red.amount;
 }
+

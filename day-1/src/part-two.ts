@@ -1,10 +1,10 @@
 import * as readline from 'readline';
 import {readInput} from "./helper/helper";
 
-const digitsAsStrings = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-const digitsAsNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+const digitsAsStrings = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+const digitsAsNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const startingWords = ['o', 't', 'f', 's', 'e', 'n']
+const startingWords = ['o', 't', 'f', 's', 'e', 'n'];
 
 export async function partTwo() {
   const rl = await readInput();
@@ -29,6 +29,7 @@ async function processLine(originalLine: string): Promise<number> {
     let firstLetter = currentLine[0];
     
     if (startingWords.includes(firstLetter)) {
+      
       const potentialDays = digitsAsStrings.filter((digit) => digit[0] === firstLetter)
       
       for (let i = 0; i < potentialDays.length; i++) {

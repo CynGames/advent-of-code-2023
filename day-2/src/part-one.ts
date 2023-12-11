@@ -107,3 +107,4 @@ function parseCube(cubeRaw: string[]): Cube {
     color: cubeRaw[1]
   }
 }
+
